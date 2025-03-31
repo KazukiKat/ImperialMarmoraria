@@ -56,6 +56,26 @@
     .feedback > div {
         overflow-x: auto;
         justify-content: flex-start;
+
+        padding-bottom: 10px;
+    }
+
+    .feedback > div::-webkit-scrollbar {
+        height: 6px;
+    }
+
+    .feedback > div::-webkit-scrollbar-track {
+        background: rgb(230, 230, 230);
+        border-radius: 20px;
+
+        cursor: pointer;
+    }
+
+    .feedback > div::-webkit-scrollbar-thumb {
+        background-color: gray;
+        border-radius: 20px;
+        
+        cursor: pointer;
     }
 }
 
