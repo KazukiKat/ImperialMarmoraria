@@ -67,6 +67,7 @@ main::before {
     border:none;
     border-bottom:1px solid #757575;
     background: 0;
+    box-sizing: border-box;
 }
 
 form {
@@ -99,7 +100,7 @@ label 				 {
 input:focus ~ label, input:valid ~ label 		{
   top:-20px;
   font-size:14px;
-  color:#5264AE;
+  color:#6374b8;
 }
 
 /* BOTTOM BARS ================================= */
@@ -181,4 +182,18 @@ button:hover{
     display: flex;
     align-items: flex-end;
     justify-content: center;
+}
+
+@media(max-width: 550px) {
+  .login-container {
+    width: 300px;
+  }
+
+  .user-pass-text {
+    flex-direction: column;
+  }
+
+  .form-link {
+    margin-bottom: 10px;
+  }
 }
